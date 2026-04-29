@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <!-- это атрибут в HTML-документах, указывающий браузеру
+    использовать кодировку символов UTF-8,
+    которая поддерживает почти все символы всех языков мира,
+    включая кириллицу, эмодзи и специальные знаки.
+    Она является стандартом для интернета,\
+    обеспечивая корректное отображение текста без "кракозябр" -->
+    <meta charset="UTF-8">
+    <!-- это метатег области просмотра.
+    Он отвечает за адаптацию сайта под разные экраны,
+    сообщая браузеру, как масштабировать страницу.
+    Чаще всего используется конструкция
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    для корректного отображения на мобильных устройствах. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>
+      Моя первая страница
+    </title>
+
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+
+    <style>
+      @keyframes bounce {
+        0% { transform: translateY(0);}
+        50% { transform: translateY(-200%);}
+        100% { transform: translateY(0);}
+      }
+      @keyframes colorize {
+        0% {
+          color: black;
+          text-shadow: none;
+        }
+        50% {
+          color: red;
+          text-shadow: 0 0 1rem green;
+        }
+        100% {
+          color: black;
+          text-shadow: none;
+        }
+      }
+      .h1{
+        margin-top: 10vh;
+        position: relative;
+        text-transform: uppercase;
+        animation: bounce 3s infinite,
+                    colorize 3s infinite;
+      }
+    </style>
+   
+</head>
+<body>
+  <h1 class="h1">привет zoya</h1>
+  <ul>
+    <li>YO</li>
+    <li>Yo</li>
+    <li>yo</li>
+  </ul>
+  <ol>
+    <li>
+      <a href="/html1.html" target="_blank" rel="noopener noreferrer">html1.html</a>
+    </li>
+    <li>
+      <a href="/html2.html" target="_blank" rel="noopener noreferrer">html2.html</a>
+    </li>
+    <li>yo</li>
+  </ul>
+</body>
+</html>

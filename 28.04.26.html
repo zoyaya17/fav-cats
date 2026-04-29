@@ -3,16 +3,21 @@
 <head>
     <title>сайт</title>
     <style>
-        html {zoom: 2;}
+        html { zoom: 2; }
         li {
             text-transform: uppercase;
             display: flex;
             flex-direction: column;
         }
 
-        a::after {
-            transition: opacity 0.5s;
+        a { transition: color 0.5s; }
+
+        a:hover,
+        a:active {
+            color: green;
         }
+
+        a::after { transition: opacity 0.5s; }
 
         li>a::after {
             content: '⬅ Подивитися';
@@ -22,18 +27,14 @@
             transition: opacity 0.5s;
         }
 
-        li:hover>a::after {
-            opacity: 1;
-        }
+        li:hover>a::after { opacity: 1; }
 
         li>a::before {
             content: '✅';
             text-decoration: none;
         }
 
-        img {
-            max-width: 15vmin;
-        }
+        img { max-width: 15vmin; }
     </style>
 </head>
 <body>

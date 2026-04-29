@@ -4,16 +4,56 @@
     <title>сайт</title>
     <style>
         html {zoom: 2;}
+        li {
+            text-transform: uppercase;
+            display: flex;
+            flex-direction: column;
+        }
+
+        a::after {
+            transition: opacity 0.5s;
+        }
+
+        li>a::after {
+            content: '⬅ Подивитися';
+            text-transform: none;
+            color: green;
+            opacity: 0;
+        }
+
+        li:hover>a::after {
+            content: '⬅ Подивитися';
+            text-transform: none;
+            color: green;
+            opacity: 1;
+            transition: opacity 0.5s;
+        }
+
+        li>a::before {
+            content: '✅';
+            text-decoration: none;
+        }
+
+        img {
+            max-width: 15vmin;
+        }
     </style>
 </head>
 <body>
     <h1>Улюблені сайти</h1>
-    <h2>Підрозділи</h2>
+    <!-- <h2>Підрозділи</h2> -->
     <ul>
-        <li><a href="https://www.youtube.com/watch?v=eYtyAdPsig8">природа</a>
+        <li>
+            <a href="https://www.youtube.com/watch?v=eYtyAdPsig8">природа</a>
+            <img src="./images/nature.png" alt="Nature">
         </li>
-        <li><a href="https://www.youtube.com/@vibe_planeta">тварини</a></li>
-        <li><a href="https://www.skylinewebcams.com/en/webcam/italia/lombardia/como/lago-di-como.html">озера</a>
+        <li>
+            <a href="https://www.youtube.com/@vibe_planeta">тварини</a>
+            <img src="./images/animals.png" alt="Animals">
+        </li>
+        <li>
+            <a href="https://www.skylinewebcams.com/en/webcam/italia/lombardia/como/lago-di-como.html">озера</a>
+            <img src="./images/lakes.png" alt="Lakes">
         </li>
     </ul>
 </body>
